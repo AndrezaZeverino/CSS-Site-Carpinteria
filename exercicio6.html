@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpintaria</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: url("fundo.jpg");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: repeat;
+        background-attachment: fixed;
+      }
+
+      #conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #topo {
+        width: 336px;
+        margin: 0 auto;
+      }
+
+      #topo a {
+        display: flex;
+      }
+
+      #menu {
+        display: flex;
+        background-color: #962d41;
+      }
+
+      #menu button {
+        color: white;
+        font-size: 1rem;
+        background-color: transparent;
+        border: 0;
+        padding: 10px;
+        flex: 1;
+        text-align: center;
+      }
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        gap: 40px;
+      }
+
+      #projetos {
+        display: flex;
+        position: relative;
+        background: url("fundo_projetos.png");
+        background-repeat: no-repeat;
+        height: 224px;
+        width: 447px;
+      }
+
+      #projetos img {
+        position: absolute;
+        left: 60px;
+        top: -50px;
+      }
+      #informacoes {
+        display: flex;
+        position: relative;
+        background: url("fundo_carpinteria.png");
+        background-repeat: no-repeat;
+        height: 224px;
+        width: 313px;
+      }
+
+      #informacoes p {
+        display: flex;
+        margin: 30px 20px 20px 60px;
+        color: white;
+        text-align: justify;
+        font-size: 13px;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+        background: linear-gradient(180deg, #76001c, #741a2f);
+      }
+      footer img {
+        width: 60%;
+      }
+      footer p {
+        color: white;
+        padding-top: 16px;
+      }
+      footer p + p {
+        padding-bottom: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="conteudo">
+      <div id="topo">
+        <a href="/">
+          <img src="logo_carpinteria.png" alt="" />
+        </a>
+        <div id="menu">
+          <button>A empresa</button>
+          <button>Projetos</button>
+          <button>Contato</button>
+        </div>
+      </div>
+      <main>
+        <div id="projetos">
+          <img src="imagem_projeto.png" />
+        </div>
+        <div id="informacoes">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas
+            sapien eget erat congue auctor. Phasellus euismod aliquet dolor, in
+            accumsan orci lacinia eget. Sed in urna dui, a dignissim erat.
+            Nullam vel nisi aliquet risus eleifend aliquet eu vitae erat.
+            Vestibulum pharetra lacus at dolor accumsan congue.
+          </p>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <img src="rodape_carpinteria.png" alt="" />
+      <p>48 1234-4567 | contato@carpinteria.com</p>
+      <p>Copyright 2012. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
